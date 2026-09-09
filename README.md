@@ -11,5 +11,5 @@ The app runs as a single container with an embedded SQLite settings store. Data 
 
 ## Setup notes
 
-- Set `Admin Email`, `Admin Password`, and `JWT Secret` on first install. These are required; leave none of them blank or the app will not start.
-- Keep the WebUI host port at the default (3006) or pick any free port other than 3000. Serving on host port 3000 breaks login.
+- The template asks for `Admin Email`, `Admin Password`, and `JWT Secret` on first install, and Unraid marks all three required, so fill them in. `JWT Secret` must be at least 32 characters. A shorter one stops the container at startup with a message saying so, because every login would otherwise fail. The app can generate the password and the secret itself when they are left unset, but this template always supplies them, so that path is not used here.
+- Keep the WebUI host port at the default (3006), or pick any other free port. The template steers away from 3000 only because it commonly collides with other apps.

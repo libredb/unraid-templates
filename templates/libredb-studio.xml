@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>LibreDB-Studio</Name>
-  <Repository>ghcr.io/libredb/libredb-studio:0.14.1</Repository>
+  <Repository>ghcr.io/libredb/libredb-studio:0.15.0</Repository>
   <Registry>https://github.com/libredb/libredb-studio/pkgs/container/libredb-studio</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/libredb/libredb-studio/issues</Support>
+  <Support>https://forums.unraid.net/topic/200517-support-libredb-libredb-studio/</Support>
   <Project>https://github.com/libredb/libredb-studio</Project>
   <Overview>LibreDB Studio is an open source (MIT), self-hosted SQL IDE. Use a clean web UI to connect to your SQL databases, browse schemas, write and run queries, and manage your data from any browser on your network. It runs as a single container and stores its own settings in an embedded SQLite file under appdata, so there is no extra database to set up just to run it, and your data persists across container updates.</Overview>
   <Category>Productivity: Tools:Utilities</Category>

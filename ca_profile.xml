@@ -3,5 +3,5 @@
   <Icon>https://raw.githubusercontent.com/libredb/unraid-templates/main/icon.svg</Icon>
   <Profile>LibreDB maintains LibreDB Studio, an open source (MIT) self-hosted SQL IDE. This repository holds the Unraid Community Applications template for it.</Profile>
   <WebPage>https://libredb.org</WebPage>
-  <Support>https://github.com/libredb/libredb-studio/issues</Support>
+  <Forum>https://forums.unraid.net/topic/200517-support-libredb-libredb-studio/</Forum>
 </CommunityApplications>

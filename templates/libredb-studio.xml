@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>LibreDB-Studio</Name>
-  <Repository>ghcr.io/libredb/libredb-studio:0.16.0</Repository>
+  <Repository>ghcr.io/libredb/libredb-studio:0.16.1</Repository>
   <Registry>https://github.com/libredb/libredb-studio/pkgs/container/libredb-studio</Registry>
   <Network>bridge</Network>
   <MyIP/>

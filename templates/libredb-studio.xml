@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>LibreDB-Studio</Name>
-  <Repository>ghcr.io/libredb/libredb-studio:0.16.2</Repository>
+  <Repository>ghcr.io/libredb/libredb-studio:0.17.0</Repository>
   <Registry>https://github.com/libredb/libredb-studio/pkgs/container/libredb-studio</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/200517-support-libredb-libredb-studio/</Support>
   <Project>https://github.com/libredb/libredb-studio</Project>
-  <Overview>LibreDB Studio is an open source (MIT), self-hosted SQL IDE. Use a clean web UI to connect to your SQL databases, browse schemas, write and run queries, and manage your data from any browser on your network. It runs as a single container and stores its own settings in an embedded SQLite file under appdata, so there is no extra database to set up just to run it, and your data persists across container updates.</Overview>
+  <Overview>LibreDB Studio is an open source (MIT), self-hosted SQL IDE. Use a clean web UI to connect to eighteen database engines, browse schemas, write and run queries, and work with your data from any browser on your network. The eighteen are PostgreSQL, MySQL, SQLite, libSQL, DuckDB, Oracle, SQL Server, ClickHouse, Apache Druid, Trino, Apache Cassandra, Elasticsearch, OpenSearch, MongoDB, Couchbase, Redis, Prometheus and Apache Kafka. Where an engine cannot edit data, the controls are shown as unsupported instead of failing. It runs as a single container and stores its own settings in an embedded SQLite file under appdata, so there is no extra database to set up just to run it, and your data persists across container updates.</Overview>
   <Category>Productivity: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/libredb/unraid-templates/main/templates/libredb-studio.xml</TemplateURL>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <DateInstalled/>
-  <Description>LibreDB Studio is an open source (MIT), self-hosted SQL IDE. Connect to your SQL databases to browse schemas, write and run queries, and manage data from any browser. Runs as a single container; its own settings live in an embedded SQLite file under appdata.</Description>
+  <Description>LibreDB Studio is an open source (MIT), self-hosted SQL IDE. Connect to eighteen database engines to browse schemas, write and run queries, and work with your data from any browser. Where an engine cannot edit data, the controls are shown as unsupported instead of failing. Runs as a single container; its own settings live in an embedded SQLite file under appdata.</Description>
   <Config Name="WebUI Port" Target="3000" Default="3006" Mode="tcp" Description="Host port for the LibreDB Studio web UI (maps to container port 3000). Any free host port works; avoid 3000 to prevent a conflict with other apps." Type="Port" Display="always" Required="true" Mask="false">3006</Config>
   <Config Name="App Data" Target="/app/data" Default="/mnt/user/appdata/libredb-studio" Mode="rw" Description="Persistent storage. The SQLite database is kept here." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/libredb-studio</Config>
   <Config Name="Admin Email" Target="ADMIN_EMAIL" Default="" Mode="" Description="Email for the initial admin account, created on first start." Type="Variable" Display="always" Required="true" Mask="false"></Config>
